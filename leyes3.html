@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Leyes de Gases 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+        .alert { background-color: #f2dede; border-left: 5px solid #a94442; color: #a94442; padding: 15px; margin-top: 15px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Leyes de los Gases - Problema 3</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Un gas ocupa un volumen de 31 L a 17 °C. Si la temperatura del gas llega a 34 °C a presión constante, ¿se podría esperar que el volumen se duplicara? Calcule el volumen final.</p>
+        </div>
+
+        <h2>Análisis Conceptual: ¿Se duplicará el volumen?</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña la importancia crítica de usar la escala de temperatura correcta (Kelvin) en las leyes de los gases y a no dejarnos engañar por las apariencias.</p>
+            <p><b>Por qué:</b> La Ley de Charles establece que el volumen es <b>directamente proporcional a la temperatura ABSOLUTA (en Kelvin)</b>. A primera vista, podría parecer que al pasar de 17 °C a 34 °C, la temperatura se duplica, y por lo tanto el volumen también debería duplicarse. Esto es incorrecto.</p>
+        </div>
+        <div class="alert">
+            ¡CUIDADO! La relación de proporcionalidad directa V ∝ T solo es válida para la temperatura en Kelvin. Nunca para Celsius o Fahrenheit.
+        </div>
+        <div class="step">
+            <h3>Paso 1: Convertir las temperaturas a Kelvin para comparar</h3>
+            <p>Veamos si la temperatura absoluta realmente se duplica.</p>
+            <div class="calculation">$$ T_1(K) = 17 + 273.15 = 290.15 \text{ K} $$</div>
+            <div class="calculation">$$ T_2(K) = 34 + 273.15 = 307.15 \text{ K} $$</div>
+            <p>Si comparamos las temperaturas en Kelvin, vemos que \(307.15 \text{ K}\) no es el doble de \(290.15 \text{ K}\). El aumento es en realidad muy pequeño.</p>
+            <div class="calculation">$$ \frac{T_2}{T_1} = \frac{307.15}{290.15} \approx 1.058 $$</div>
+            <p>La temperatura absoluta solo aumenta un 5.8%, no un 100%.</p>
+            <div class="final-answer" style="background-color:#c0392b;">
+                <p>Respuesta Conceptual: <strong>No, el volumen no se duplicará.</strong></p>
+            </div>
+        </div>
+
+        <h2 style="margin-top:50px;">Cálculo del Volumen Final</h2>
+        <div class="explanation">
+            <p>Ahora que hemos aclarado el concepto, procedemos a calcular el volumen real utilizando la Ley de Charles, ya que el problema especifica "a presión constante".</p>
+        </div>
+        <div class="step">
+            <h3>Paso 2: Aplicar la fórmula de Charles</h3>
+            <p>La fórmula es \(\frac{V_1}{T_1} = \frac{V_2}{T_2}\). Despejamos nuestra incógnita, \(V_2\), usando las temperaturas en Kelvin que ya calculamos.</p>
+            <div class="calculation">
+                $$ V_2 = \frac{V_1 T_2}{T_1} = \frac{(31 \text{ L}) \times (307.15 \text{ K})}{290.15 \text{ K}} $$
+                $$ V_2 \approx 32.8 \text{ L} $$
+            </div>
+        </div>
+        <div class="final-answer">
+            <p>Respuesta Numérica: El volumen final del gas es <strong>32.8 L</strong>.</p>
+        </div>
+        <div class="explanation">
+            <p><b>Conclusión:</b> Como predijimos, el volumen no se duplicó. Aumentó de 31 L a 32.8 L, un incremento de aproximadamente 5.8%, que es consistente con el aumento porcentual de la temperatura absoluta.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="leyes4.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

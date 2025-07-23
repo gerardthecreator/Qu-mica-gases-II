@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Densidad y Peso Molecular 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Densidad y Peso Molecular - Problema 4</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Un compuesto tiene la fórmula empírica SF₄. A 20 °C, 0,100 g del compuesto gaseoso ocupan un volumen de 22,1 mL y ejercen una presión de 1,02 atm. ¿Cuál es la fórmula molecular del gas?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a conectar la información experimental de un gas (P, V, T, m) con su estructura química real (fórmula molecular). La fórmula empírica es la relación más simple de átomos, mientras que la molecular es la fórmula real de la molécula.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li>Calcular la <b>masa molar experimental</b> del gas usando los datos y la Ecuación del Gas Ideal (\(M = mRT/PV\)).</li>
+                <li>Calcular la <b>masa molar de la fórmula empírica</b> (SF₄).</li>
+                <li>Dividir la masa molar experimental entre la masa molar empírica. El resultado (que debe ser un número entero) nos dirá cuántas unidades de la fórmula empírica hay en la fórmula molecular.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Calcular la Masa Molar Experimental</h3>
+            <p>Primero, convertimos los datos a unidades estándar.</p>
+            <ul>
+                <li><b>m:</b> 0.100 g</li>
+                <li><b>V:</b> 22.1 mL → 0.0221 L</li>
+                <li><b>P:</b> 1.02 atm</li>
+                <li><b>T:</b> 20 °C → 293.15 K</li>
+            </ul>
+            <p>Aplicamos la fórmula:</p>
+            <div class="calculation">
+                $$ M_{exp} = \frac{mRT}{PV} = \frac{(0.100 \text{ g}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (293.15 \text{ K})}{(1.02 \text{ atm}) \times (0.0221 \text{ L})} $$
+                $$ M_{exp} = \frac{2.407}{0.02254} \frac{\text{g}}{\text{mol}} \approx 106.8 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la Masa Molar de la Fórmula Empírica (SF₄)</h3>
+            <p>Usamos las masas atómicas (S ≈ 32.07 g/mol, F ≈ 19.00 g/mol).</p>
+            <div class="calculation">
+                $$ M_{emp} = (1 \times 32.07) + (4 \times 19.00) = 32.07 + 76.00 = 108.07 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Determinar la Fórmula Molecular</h3>
+            <p>Comparamos las dos masas molares.</p>
+            <div class="calculation">
+                $$ \text{Factor} = \frac{M_{exp}}{M_{emp}} = \frac{106.8 \text{ g/mol}}{108.07 \text{ g/mol}} \approx 0.988 \approx 1 $$
+            </div>
+            <p>El factor es prácticamente 1. Esto significa que la fórmula molecular contiene una sola unidad de la fórmula empírica.</p>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La fórmula molecular del gas es la misma que la empírica: <strong>SF₄</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="densidad5.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

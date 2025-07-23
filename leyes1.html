@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Leyes de Gases 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Leyes de los Gases - Problema 1</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Una cantidad fija de gas a 23 °C exhibe una presión de 748 torr y ocupa un volumen de 10,3 L. <br>a) Utilice la ley de Boyle para calcular el volumen que el gas ocupará a 23 °C si la presión se aumenta a 1,88 atm. <br>b) Utilice la ley de Charles para calcular el volumen que ocupará el gas si la temperatura se aumenta a 165 °C mientras la presión se mantiene constante.</p>
+        </div>
+
+        <h2>Parte (a): Aplicación de la Ley de Boyle</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Para predecir el nuevo volumen de un gas cuando se comprime o expande a temperatura constante.</p>
+            <p><b>Por qué:</b> El problema especifica que la temperatura inicial y final es la misma (23 °C), y la cantidad de gas es "fija". Con T y n constantes, la relación entre presión y volumen se rige por la <b>Ley de Boyle</b>.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Organizar datos y verificar unidades</h3>
+            <p>Estado Inicial (1): \(P_1 = 748 \text{ torr}\), \(V_1 = 10.3 \text{ L}\)</p>
+            <p>Estado Final (2): \(P_2 = 1.88 \text{ atm}\), \(V_2 = ?\)</p>
+            <p>Las presiones están en unidades diferentes. Debemos unificarlas. Convertiremos torr a atm, sabiendo que \(1 \text{ atm} = 760 \text{ torr}\).</p>
+            <div class="calculation">$$ P_1 = 748 \text{ torr} \times \frac{1 \text{ atm}}{760 \text{ torr}} \approx 0.984 \text{ atm} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Aplicar la fórmula de Boyle y resolver</h3>
+            <p>La fórmula es \(P_1V_1 = P_2V_2\). Despejamos nuestra incógnita, \(V_2\).</p>
+            <div class="calculation">
+                $$ V_2 = \frac{P_1 V_1}{P_2} = \frac{(0.984 \text{ atm}) \times (10.3 \text{ L})}{1.88 \text{ atm}} $$
+                $$ V_2 \approx 5.39 \text{ L} $$
+            </div>
+        </div>
+        <div class="final-answer" style="background-color:#2980b9;">
+            <p>Respuesta (a): El nuevo volumen es <strong>5.39 L</strong>.</p>
+        </div>
+
+        <h2 style="margin-top:50px;">Parte (b): Aplicación de la Ley de Charles</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Para predecir cómo cambia el volumen de un gas cuando se calienta o enfría a presión constante.</p>
+            <p><b>Por qué:</b> El problema indica que "la presión se mantiene constante". Con P y n constantes, la relación entre volumen y temperatura se rige por la <b>Ley de Charles</b>.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Organizar datos y convertir a Kelvin</h3>
+            <p>Estado Inicial (1): \(V_1 = 10.3 \text{ L}\), \(T_1 = 23 \text{ °C}\)</p>
+            <p>Estado Final (2): \(V_2 = ?\), \(T_2 = 165 \text{ °C}\)</p>
+            <p><b>¡Regla de Oro!</b> Todas las temperaturas en las leyes de los gases DEBEN estar en Kelvin.</p>
+            <div class="calculation">$$ T_1(K) = 23 + 273.15 = 296.15 \text{ K} $$</div>
+            <div class="calculation">$$ T_2(K) = 165 + 273.15 = 438.15 \text{ K} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Aplicar la fórmula de Charles y resolver</h3>
+            <p>La fórmula es \(\frac{V_1}{T_1} = \frac{V_2}{T_2}\). Despejamos nuestra incógnita, \(V_2\).</p>
+            <div class="calculation">
+                $$ V_2 = \frac{V_1 T_2}{T_1} = \frac{(10.3 \text{ L}) \times (438.15 \text{ K})}{296.15 \text{ K}} $$
+                $$ V_2 \approx 15.2 \text{ L} $$
+            </div>
+        </div>
+        <div class="final-answer">
+            <p>Respuesta (b): El nuevo volumen es <strong>15.2 L</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+         <a href="leyes_gas_2.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

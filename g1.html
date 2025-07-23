@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Gases Reales 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Gases Reales - Problema 1</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Calcule la presión ejercida por 1,00 mol de Cl₂ en un recipiente de 2,00 L a 0,0 °C utilizando: a) la ecuación del gas ideal y b) la ecuación de Van der Waals. Compare los resultados.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema ilustra la diferencia entre el modelo ideal y un modelo más realista (Van der Waals) bajo condiciones no ideales (baja temperatura y volumen relativamente pequeño). Nos permite cuantificar la desviación del comportamiento ideal.</p>
+            <p><b>Por qué:</b> La ecuación de Van der Waals introduce dos constantes, 'a' y 'b', que corrigen la presión y el volumen. 'a' considera las fuerzas de atracción intermoleculares y 'b' el volumen que ocupan las propias moléculas. Compararemos el resultado de ambos modelos.</p>
+        </div>
+
+        <h2>a) Cálculo con la Ecuación del Gas Ideal</h2>
+        <div class="step">
+            <h3>Paso 1: Organizar datos y resolver</h3>
+            <p>T = 0.0 °C = 273.15 K. V = 2.00 L. n = 1.00 mol.</p>
+            <div class="calculation">
+                $$ P_{ideal} = \frac{nRT}{V} = \frac{(1.00 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (273.15 \text{ K})}{2.00 \text{ L}} $$
+                $$ P_{ideal} \approx 11.2 \text{ atm} $$
+            </div>
+        </div>
+
+        <h2 style="margin-top:40px;">b) Cálculo con la Ecuación de Van der Waals</h2>
+        <div class="step">
+            <h3>Paso 1: Obtener constantes y definir la ecuación</h3>
+            <p>Para el Cloro (Cl₂), las constantes de Van der Waals son: [1, 3]
+            <br><b>a = 6.343 L²·atm/mol²</b>
+            <br><b>b = 0.05422 L/mol</b></p>
+            <p>La ecuación reordenada para calcular la presión es:</p>
+            <div class="calculation">$$ P_{real} = \frac{nRT}{V-nb} - \frac{an^2}{V^2} $$</div>
+        </div>
+        <div class="step">
+            <h3>Paso 2: Sustituir valores y resolver</h3>
+            <div class="calculation">
+                $$ P_{real} = \frac{(1.00)(0.0821)(273.15)}{2.00 - (1.00)(0.05422)} - \frac{(6.343)(1.00)^2}{(2.00)^2} $$
+                $$ P_{real} = \frac{22.42}{1.94578} - \frac{6.343}{4.00} $$
+                $$ P_{real} = 11.52 - 1.59 \approx 9.93 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta:</p>
+            <ul>
+                <li>Presión Ideal: <strong>11.2 atm</strong></li>
+                <li>Presión Real (Van der Waals): <strong>9.93 atm</strong></li>
+            </ul>
+            <p><b>Comparación:</b> La presión real calculada es significativamente menor que la ideal. Esto se debe a que las fuerzas de atracción entre las moléculas de Cloro (corregidas por el término 'a') son dominantes en estas condiciones y reducen la presión efectiva sobre las paredes del recipiente.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="g2.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

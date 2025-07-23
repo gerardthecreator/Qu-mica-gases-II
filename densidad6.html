@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Densidad y Peso Molecular 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+        .alert { background-color: #f2dede; border-left: 5px solid #a94442; color: #a94442; padding: 15px; margin-top: 15px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Densidad y Peso Molecular - Problema 6</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> La densidad de un gas a 1,5 atm y 27 °C es de 1,35 kg/m³. Calcule la masa molar del gas.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a calcular la masa molar de un gas a partir de su densidad, incluso cuando las unidades no son las estándar. Es un ejercicio excelente para practicar la conversión de unidades.</p>
+            <p><b>Por qué:</b> La fórmula clave es \(M = \frac{dRT}{P}\). El principal desafío aquí no es la química, sino asegurarse de que todas las unidades sean compatibles con la constante de los gases R (0.0821 L·atm/mol·K).</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Organizar datos y realizar conversiones de unidades</h3>
+            <p>Reunimos los datos y los convertimos a las unidades necesarias (g/L, atm, K).</p>
+            <ul>
+                <li><b>P (presión):</b> 1.5 atm (ya está en la unidad correcta)</li>
+                <li><b>T (temperatura):</b> 27 °C → \(27 + 273.15 = 300.15 \text{ K}\)</li>
+                <li><b>d (densidad):</b> 1.35 kg/m³</li>
+            </ul>
+            <div class="alert">
+                ¡Atención a la conversión de densidad! Necesitamos g/L, no kg/m³.
+            </div>
+            <div class="calculation">
+                $$ d = 1.35 \frac{\text{kg}}{\text{m}^3} \times \frac{1000 \text{ g}}{1 \text{ kg}} \times \frac{1 \text{ m}^3}{1000 \text{ L}} = 1.35 \frac{\text{g}}{\text{L}} $$
+            </div>
+            <p>(Nota: ¡Qué conveniente! 1 kg/m³ es exactamente igual a 1 g/L).</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Aplicar la fórmula de la Masa Molar y resolver</h3>
+            <p>Ahora que todas las unidades son consistentes, sustituimos los valores en la fórmula.</p>
+            <div class="calculation">
+                $$ M = \frac{dRT}{P} = \frac{(1.35 \frac{\text{g}}{\text{L}}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (300.15 \text{ K})}{1.5 \text{ atm}} $$
+                $$ M = \frac{33.27}{1.5} \frac{\text{g}}{\text{mol}} \approx 22.2 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La masa molar del gas es <strong>22.2 g/mol</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="es1.html" class="nav-link" style="float: right;">Siguiente Sección →</a>
+    </div>
+</body>
+</html>

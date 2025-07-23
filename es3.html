@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Estequiometría y Gases 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+        .alert { background-color: #f2dede; border-left: 5px solid #a94442; color: #a94442; padding: 15px; margin-top: 15px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Estequiometría y Gases - Problema 3</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> El sodio metálico reacciona con agua para dar hidróxido de sodio e hidrógeno gaseoso. Si se recogen 0,54 g de sodio sobre agua a 21 °C y 748 torr, ¿qué volumen de hidrógeno se producirá?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema introduce una técnica de laboratorio muy común: la <b>recogida de un gas sobre agua</b>. Nos enseña a corregir la presión medida para tener en cuenta la contribución del vapor de agua, aplicando la Ley de Dalton de las presiones parciales.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li>Escribir y balancear la ecuación de la reacción.</li>
+                <li>Calcular los moles de sodio (Na) a partir de su masa.</li>
+                <li>Usar la estequiometría para hallar los moles de hidrógeno (H₂) producidos.</li>
+                <li><b>Corregir la presión:</b> Restar la presión de vapor del agua a la presión total para obtener la presión parcial del H₂ seco.</li>
+                <li>Usar la Ley del Gas Ideal con la presión parcial del H₂ para calcular su volumen.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Ecuación y Moles de Na</h3>
+            <p>La reacción balanceada es:</p>
+            <div class="calculation">$$ 2\text{Na(s)} + 2\text{H}_2\text{O(l)} \rightarrow 2\text{NaOH(ac)} + \text{H}_2\text{(g)} $$</div>
+            <p>Masa molar de Na ≈ 22.99 g/mol. Calculamos los moles de Na:</p>
+            <div class="calculation">$$ n_{Na} = \frac{0.54 \text{ g}}{22.99 \text{ g/mol}} \approx 0.0235 \text{ mol} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular los moles de H₂ producidos</h3>
+            <p>La relación molar es <b>2 moles de Na producen 1 mol de H₂</b>.</p>
+            <div class="calculation">
+                $$ n_{H_2} = 0.0235 \text{ mol Na} \times \frac{1 \text{ mol H}_2}{2 \text{ mol Na}} = 0.01175 \text{ mol H}_2 $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Corregir la Presión</h3>
+            <p>La presión total medida (748 torr) es la suma de la presión del H₂ y la presión del vapor de agua.</p>
+            <div class="calculation">$$ P_{total} = P_{H_2} + P_{H_2O} $$</div>
+            <div class="alert">La presión de vapor del agua a 21 °C es un valor tabulado: \(P_{H_2O} \approx 18.7 \text{ torr}\).</div>
+            <p>Calculamos la presión parcial del hidrógeno seco:</p>
+            <div class="calculation">
+                $$ P_{H_2} = P_{total} - P_{H_2O} = 748 \text{ torr} - 18.7 \text{ torr} = 729.3 \text{ torr} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 4: Calcular el volumen de H₂</h3>
+            <p>Convertimos las condiciones del H₂ a unidades estándar:</p>
+            <ul>
+                <li><b>P:</b> 729.3 torr → \(729.3 / 760 \approx 0.960 \text{ atm}\)</li>
+                <li><b>T:</b> 21 °C → \(21 + 273.15 = 294.15 \text{ K}\)</li>
+                <li><b>n:</b> 0.01175 mol</li>
+            </ul>
+            <p>Aplicamos la Ley del Gas Ideal:</p>
+            <div class="calculation">
+                $$ V = \frac{nRT}{P} = \frac{(0.01175 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (294.15 \text{ K})}{0.960 \text{ atm}} $$
+                $$ V = \frac{0.283}{0.960} \text{ L} \approx 0.295 \text{ L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: Se producirán <strong>0.295 L</strong> (o 295 mL) de hidrógeno.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="es4.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

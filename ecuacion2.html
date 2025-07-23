@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Ecuación Gas Ideal 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Ecuación del Gas Ideal - Problema 2</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Una muestra de 0,312 g de un gas ocupa un volumen de 185 mL a 355 K y 100 kPa. ¿Cuál es la masa molar del gas?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Al igual que el problema 3 de esta sección, este ejercicio refuerza la técnica para determinar la identidad de un gas desconocido a través de su masa molar, una aplicación fundamental en la química analítica.</p>
+            <p><b>Por qué:</b> La estrategia consiste en usar la Ecuación del Gas Ideal (\(PV=nRT\)) y la definición de mol (\(n = m/M\)) para derivar una fórmula que relacione directamente las propiedades medibles (P, V, T, m) con la masa molar (M).</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Organizar datos y convertir a unidades estándar</h3>
+            <p>Es crucial que todas las unidades sean compatibles con la constante R = 0.0821 L·atm/mol·K.</p>
+            <ul>
+                <li><b>m (masa):</b> 0.312 g</li>
+                <li><b>V (volumen):</b> 185 mL → 0.185 L</li>
+                <li><b>T (temperatura):</b> 355 K (ya está en Kelvin)</li>
+                <li><b>P (presión):</b> 100 kPa. Necesitamos convertirlo a atm. (1 atm = 101.325 kPa)</li>
+            </ul>
+            <div class="calculation">$$ P(\text{atm}) = 100 \text{ kPa} \times \frac{1 \text{ atm}}{101.325 \text{ kPa}} \approx 0.987 \text{ atm} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Aplicar la fórmula para la Masa Molar</h3>
+            <p>Partimos de la fórmula que relaciona la masa molar con las propiedades del gas:</p>
+            <div class="calculation">$$ M = \frac{mRT}{PV} $$</div>
+            <p>Sustituimos nuestros valores convertidos:</p>
+            <div class="calculation">
+                $$ M = \frac{(0.312 \text{ g}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (355 \text{ K})}{(0.987 \text{ atm}) \times (0.185 \text{ L})} $$
+                $$ M = \frac{9.09}{0.1826} \frac{\text{g}}{\text{mol}} \approx 49.8 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La masa molar del gas es <strong>49.8 g/mol</strong>.</p>
+        </div>
+        
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="ecuacion3.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

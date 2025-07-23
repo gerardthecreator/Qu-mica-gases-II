@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Estequiometría y Gases 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Estequiometría y Gases - Problema 1</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> El etanol (C₂H₅OH) se quema en el aire. ¿Qué volumen de O₂ (en litros) se requiere para la combustión de 22,7 g de etanol a 35 °C y 790 torr?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a calcular la cantidad de un reactivo gaseoso (oxígeno) necesaria para reaccionar completamente con una cantidad conocida de otro reactivo (etanol). Es un cálculo fundamental en el diseño de procesos de combustión.</p>
+            <p><b>Plan de Ataque (Masa → Moles → Moles → Volumen):</b>
+            <ol>
+                <li>Escribir y <b>balancear</b> la ecuación de combustión del etanol.</li>
+                <li>Convertir la masa de etanol a <b>moles de etanol</b>.</li>
+                <li>Usar la relación molar de la ecuación para encontrar los <b>moles de O₂</b> necesarios.</li>
+                <li>Usar la Ley del Gas Ideal (\(V = nRT/P\)) para calcular el <b>volumen de O₂</b> en las condiciones dadas.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Escribir y balancear la ecuación de combustión</h3>
+            <p>La combustión completa de un compuesto orgánico con oxígeno produce CO₂ y H₂O.</p>
+            <div class="calculation">
+                $$ \text{C}_2\text{H}_5\text{OH(l)} + 3\text{O}_2\text{(g)} \rightarrow 2\text{CO}_2\text{(g)} + 3\text{H}_2\text{O(l)} $$
+            </div>
+            <p>La relación molar clave es: <b>1 mol de C₂H₅OH reacciona con 3 moles de O₂</b>.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular los moles de Etanol (C₂H₅OH)</h3>
+            <p>Masa molar de C₂H₅OH = (2×12.01) + (6×1.008) + (1×16.00) = 46.07 g/mol.</p>
+            <div class="calculation">
+                $$ n_{etanol} = \frac{22.7 \text{ g}}{46.07 \text{ g/mol}} \approx 0.493 \text{ mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular los moles de O₂ necesarios</h3>
+            <p>Usamos la relación estequiométrica 1:3.</p>
+            <div class="calculation">
+                $$ n_{O_2} = 0.493 \text{ mol etanol} \times \frac{3 \text{ mol O}_2}{1 \text{ mol etanol}} \approx 1.479 \text{ mol O}_2 $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 4: Calcular el volumen de O₂</h3>
+            <p>Convertimos las condiciones a unidades estándar:</p>
+            <ul>
+                <li><b>P:</b> 790 torr → \(790 / 760 \approx 1.039 \text{ atm}\)</li>
+                <li><b>T:</b> 35 °C → \(35 + 273.15 = 308.15 \text{ K}\)</li>
+            </ul>
+            <p>Aplicamos la Ley del Gas Ideal:</p>
+            <div class="calculation">
+                $$ V = \frac{nRT}{P} = \frac{(1.479 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (308.15 \text{ K})}{1.039 \text{ atm}} $$
+                $$ V = \frac{37.45}{1.039} \text{ L} \approx 36.0 \text{ L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: Se requieren <strong>36.0 L</strong> de oxígeno.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="es2.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

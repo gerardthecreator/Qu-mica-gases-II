@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 8</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> El aire seco cerca del nivel del mar tiene la siguiente composición en volumen: N₂, 78,08%; O₂, 20,94%; Ar, 0,93%; CO₂, 0,05%. La presión atmosférica es de 1,00 atm. Calcule la presión parcial de cada gas.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos muestra cómo la presión atmosférica que sentimos es en realidad la suma de las presiones de varios gases diferentes. Es una aplicación directa de la Ley de Dalton a la atmósfera terrestre.</p>
+            <p><b>Por qué:</b> Para los gases ideales, la <b>composición en volumen</b> es directamente igual a la <b>composición en moles (fracción molar)</b>. Por lo tanto, podemos usar la fórmula \(P_A = X_A \cdot P_{Total}\) para cada componente del aire, donde la fracción molar (\(X_A\)) es simplemente el porcentaje en volumen dividido por 100.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Identificar datos y convertir porcentajes a fracciones molares</h3>
+            <p>Presión Total = 1.00 atm.</p>
+            <ul>
+                <li>\(X_{N_2} = 78.08 / 100 = 0.7808\)</li>
+                <li>\(X_{O_2} = 20.94 / 100 = 0.2094\)</li>
+                <li>\(X_{Ar} = 0.93 / 100 = 0.0093\)</li>
+                <li>\(X_{CO_2} = 0.05 / 100 = 0.0005\)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la presión parcial de cada gas</h3>
+            <p>Aplicamos la fórmula \(P_{gas} = X_{gas} \times P_{Total}\) para cada uno.</p>
+            <div class="calculation">$$ P_{N_2} = 0.7808 \times 1.00 \text{ atm} = 0.7808 \text{ atm} $$</div>
+            <div class="calculation">$$ P_{O_2} = 0.2094 \times 1.00 \text{ atm} = 0.2094 \text{ atm} $$</div>
+            <div class="calculation">$$ P_{Ar} = 0.0093 \times 1.00 \text{ atm} = 0.0093 \text{ atm} $$</div>
+            <div class="calculation">$$ P_{CO_2} = 0.0005 \times 1.00 \text{ atm} = 0.0005 \text{ atm} $$</div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta:</p>
+            <ul>
+                <li>Presión parcial de N₂: <strong>0.7808 atm</strong></li>
+                <li>Presión parcial de O₂: <strong>0.2094 atm</strong></li>
+                <li>Presión parcial de Ar: <strong>0.0093 atm</strong></li>
+                <li>Presión parcial de CO₂: <strong>0.0005 atm</strong></li>
+            </ul>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p9.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

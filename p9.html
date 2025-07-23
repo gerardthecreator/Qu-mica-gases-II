@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 9</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Se hacen reaccionar 0,50 moles de H₂ con 0,75 moles de O₂ en un recipiente de 5,0 L a 25 °C. ¿Cuál es la presión total final?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema es un ejercicio completo que combina estequiometría con <b>reactivo limitante</b> y la ley de los gases. Nos enseña a determinar la composición final de una mezcla después de una reacción y a calcular su presión.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li>Escribir y balancear la ecuación de la reacción.</li>
+                <li>Determinar el <b>reactivo limitante</b> para saber qué reactivo se consume por completo.</li>
+                <li>Calcular los moles del reactivo en <b>exceso</b> que quedan sin reaccionar.</li>
+                <li>Calcular los moles del <b>producto</b> (agua gaseosa) que se forman.</li>
+                <li>Sumar los moles del producto y los del reactivo en exceso para obtener los <b>moles totales finales</b>.</li>
+                <li>Usar la Ley del Gas Ideal para calcular la presión total final.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Ecuación y Reactivo Limitante</h3>
+            <p>La reacción de formación de agua es:</p>
+            <div class="calculation">$$ 2\text{H}_2\text{(g)} + \text{O}_2\text{(g)} \rightarrow 2\text{H}_2\text{O(g)} $$</div>
+            <p>Tenemos 0.50 mol de H₂ y 0.75 mol de O₂. La relación estequiométrica es 2:1. ¿Cuánto O₂ se necesita para reaccionar con todo el H₂?</p>
+            <div class="calculation">$$ 0.50 \text{ mol H}_2 \times \frac{1 \text{ mol O}_2}{2 \text{ mol H}_2} = 0.25 \text{ mol O}_2 \text{ necesarios} $$</div>
+            <p>Tenemos 0.75 mol de O₂, que es más de lo necesario (0.25 mol). Por lo tanto, <b>el H₂ es el reactivo limitante</b> y el O₂ está en exceso.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular Moles Finales</h3>
+            <p><b>Moles de H₂ (final):</b> 0 mol (se consume todo).</p>
+            <p><b>Moles de O₂ (final):</b> \(0.75 \text{ (inicial)} - 0.25 \text{ (reaccionó)} = 0.50 \text{ mol}\).</p>
+            <p><b>Moles de H₂O (producido):</b> La cantidad de producto depende del reactivo limitante.</p>
+            <div class="calculation">$$ 0.50 \text{ mol H}_2 \times \frac{2 \text{ mol H}_2\text{O}}{2 \text{ mol H}_2} = 0.50 \text{ mol H}_2\text{O} $$</div>
+            <p>Los moles totales de gas al final son los del O₂ en exceso más los del H₂O formada.</p>
+            <div class="calculation">$$ n_{total} = n_{O_2, final} + n_{H_2O, final} = 0.50 + 0.50 = 1.00 \text{ mol} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular la Presión Total Final</h3>
+            <p>T = 25 °C = 298.15 K. V = 5.0 L.</p>
+            <div class="calculation">
+                $$ P_{Total} = \frac{n_{total}RT}{V} = \frac{(1.00 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (298.15 \text{ K})}{5.0 \text{ L}} \approx 4.89 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La presión total final en el recipiente es <strong>4.89 atm</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="g1.html" class="nav-link" style="float: right;">Siguiente Sección →</a>
+    </div>
+</body>
+</html>

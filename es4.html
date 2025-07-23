@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Estequiometría y Gases 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Estequiometría y Gases - Problema 4</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> La azida de sodio (NaN₃) se utiliza en las bolsas de aire de algunos automóviles. El impacto de una colisión desencadena la descomposición de la NaN₃ de la siguiente manera: 2NaN₃(s) → 2Na(s) + 3N₂(g). Calcule el volumen de N₂ generado a 21 °C y 823 torr por la descomposición de 100 g de NaN₃.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema es una aplicación directa de la estequiometría de gases a una tecnología de seguridad vital. Nos muestra cómo se puede calcular el volumen de gas que infla un airbag a partir de una cantidad inicial de reactivo sólido.</p>
+            <p><b>Plan de Ataque (Masa → Moles → Moles → Volumen):</b>
+            <ol>
+                <li>Calcular los moles de azida de sodio (NaN₃) a partir de su masa.</li>
+                <li>Usar la relación molar de la ecuación (ya balanceada) para encontrar los moles de nitrógeno (N₂) producidos.</li>
+                <li>Usar la Ley del Gas Ideal (\(V = nRT/P\)) para calcular el volumen de N₂ en las condiciones dadas.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Calcular los moles de Azida de Sodio (NaN₃)</h3>
+            <p>Masa molar de NaN₃ = (1×22.99) + (3×14.01) = 65.02 g/mol.</p>
+            <div class="calculation">
+                $$ n_{NaN_3} = \frac{100 \text{ g}}{65.02 \text{ g/mol}} \approx 1.538 \text{ mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular los moles de N₂ producidos</h3>
+            <p>La relación estequiométrica es <b>2 moles de NaN₃ producen 3 moles de N₂</b>.</p>
+            <div class="calculation">
+                $$ n_{N_2} = 1.538 \text{ mol NaN}_3 \times \frac{3 \text{ mol N}_2}{2 \text{ mol NaN}_3} \approx 2.307 \text{ mol N}_2 $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular el volumen de N₂</h3>
+            <p>Convertimos las condiciones a unidades estándar:</p>
+            <ul>
+                <li><b>P:</b> 823 torr → \(823 / 760 \approx 1.083 \text{ atm}\)</li>
+                <li><b>T:</b> 21 °C → \(21 + 273.15 = 294.15 \text{ K}\)</li>
+            </ul>
+            <p>Aplicamos la Ley del Gas Ideal:</p>
+            <div class="calculation">
+                $$ V = \frac{nRT}{P} = \frac{(2.307 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (294.15 \text{ K})}{1.083 \text{ atm}} $$
+                $$ V = \frac{55.69}{1.083} \text{ L} \approx 51.4 \text{ L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: Se generan <strong>51.4 L</strong> de nitrógeno gaseoso.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="es5.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

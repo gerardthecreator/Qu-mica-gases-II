@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 2</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Una mezcla de helio y neón gaseosos tiene una presión total de 2,8 atm. Si la fracción molar del helio es 0,35, ¿cuál es la presión parcial del helio?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña la relación directa entre la fracción molar (la proporción de un gas en la mezcla) y su presión parcial. Es la forma más elegante y directa de calcular presiones parciales si se conoce la composición de la mezcla.</p>
+            <p><b>Por qué:</b> La Ley de Dalton tiene una forma muy útil que usa la fracción molar (\(X_A\)): \(P_A = X_A \cdot P_{Total}\). La fracción molar de un componente es simplemente los moles de ese componente divididos por los moles totales. Este problema es una aplicación directa de esta fórmula.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Identificar los datos y la fórmula</h3>
+            <ul>
+                <li><b>Presión Total (\(P_{Total}\)):</b> 2.8 atm</li>
+                <li><b>Fracción Molar de Helio (\(X_{He}\)):</b> 0.35</li>
+            </ul>
+            <p>La fórmula a utilizar es:</p>
+            <div class="calculation">
+                $$ P_{He} = X_{He} \times P_{Total} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la presión parcial del Helio</h3>
+            <p>Sustituimos los valores directamente en la fórmula.</p>
+            <div class="calculation">
+                $$ P_{He} = 0.35 \times 2.8 \text{ atm} = 0.98 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La presión parcial del helio es <strong>0.98 atm</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p3.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

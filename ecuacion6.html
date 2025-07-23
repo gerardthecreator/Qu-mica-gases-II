@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Ecuación Gas Ideal 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Ecuación del Gas Ideal - Problema 6</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Un recipiente de 2,10 L contiene 4,65 g de un gas a 1,00 atm y 27,0 °C. <br>a) Calcule la densidad del gas en g/L. <br>b) ¿Cuál es la masa molar del gas?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a calcular dos propiedades fundamentales de un gas, la densidad y la masa molar, a partir de sus condiciones experimentales. Muestra cómo estas propiedades están interconectadas a través de la Ley del Gas Ideal.</p>
+            <p><b>Por qué:</b> La parte (a) es un cálculo directo de densidad a partir de masa y volumen. La parte (b) se puede resolver de dos formas: usando la fórmula \(M = mRT/PV\) o, más elegantemente, usando la fórmula de la densidad de un gas \(d = PM/RT\), que conecta directamente las dos partes del problema.</p>
+        </div>
+
+        <h2>Parte (a): Cálculo de la Densidad</h2>
+        <div class="step">
+            <h3>Paso 1: Aplicar la definición de densidad</h3>
+            <p>La densidad (d) es simplemente la masa (m) dividida por el volumen (V).</p>
+            <div class="calculation">$$ d = \frac{m}{V} = \frac{4.65 \text{ g}}{2.10 \text{ L}} \approx 2.21 \text{ g/L} $$</div>
+        </div>
+        <div class="final-answer" style="background-color:#2980b9;">
+            <p>Respuesta (a): La densidad del gas es <strong>2.21 g/L</strong>.</p>
+        </div>
+
+        <h2 style="margin-top:40px;">Parte (b): Cálculo de la Masa Molar</h2>
+        <div class="step">
+            <h3>Paso 2: Organizar datos y aplicar la fórmula de masa molar</h3>
+            <p>Usaremos la fórmula que relaciona la densidad con la masa molar: \(M = \frac{dRT}{P}\). Primero, nos aseguramos de que todas las unidades sean correctas.</p>
+            <ul>
+                <li><b>d (densidad):</b> 2.21 g/L (calculada en la parte a)</li>
+                <li><b>P (presión):</b> 1.00 atm</li>
+                <li><b>T (temperatura):</b> 27.0 °C → \(27.0 + 273.15 = 300.15 \text{ K}\)</li>
+                <li><b>R:</b> 0.0821 L·atm/mol·K</li>
+            </ul>
+            <p>Ahora, sustituimos los valores:</p>
+            <div class="calculation">
+                $$ M = \frac{(2.21 \frac{\text{g}}{\text{L}}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (300.15 \text{ K})}{1.00 \text{ atm}} $$
+                $$ M \approx 54.4 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta (b): La masa molar del gas es <strong>54.4 g/mol</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="densidad1.html" class="nav-link" style="float: right;">Siguiente Sección →</a>
+    </div>
+</body>
+</html>

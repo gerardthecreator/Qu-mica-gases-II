@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Leyes de Gases 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Leyes de los Gases - Problema 4</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Una muestra de gas ocupa un volumen de 8,2 L a -10 °C y 755 torr. ¿Qué volumen ocupará a 25 °C y 1,2 atm?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a predecir el estado de un gas cuando cambian todas sus condiciones (presión, volumen y temperatura) simultáneamente. Es el escenario más general para un gas de cantidad fija.</p>
+            <p><b>Por qué:</b> En este caso, ninguna de las tres variables (P, V, T) se mantiene constante, pero la cantidad de gas (moles, n) sí es fija. Esto es un caso de libro para usar la <b>Ley Combinada de los Gases</b>, que fusiona las leyes de Boyle, Charles y Gay-Lussac en una sola ecuación.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Identificar la ley y organizar los datos</h3>
+            <p>La ley a utilizar es la Ley Combinada de los Gases: \( \frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2} \).</p>
+            <p>Organizamos los estados inicial y final:</p>
+            <ul>
+                <li><b>Estado Inicial (1):</b></li>
+                <ul>
+                    <li>\(P_1 = 755 \text{ torr}\)</li>
+                    <li>\(V_1 = 8.2 \text{ L}\)</li>
+                    <li>\(T_1 = -10 \text{ °C}\)</li>
+                </ul>
+                <li><b>Estado Final (2):</b></li>
+                <ul>
+                    <li>\(P_2 = 1.2 \text{ atm}\)</li>
+                    <li>\(V_2 = ?\) (Nuestra incógnita)</li>
+                    <li>\(T_2 = 25 \text{ °C}\)</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Unificar unidades y convertir a Kelvin</h3>
+            <p>Para que la ecuación funcione, las unidades de presión deben ser las mismas y las temperaturas deben estar en Kelvin.</p>
+            <p><b>Temperaturas a Kelvin:</b></p>
+            <div class="calculation">$$ T_1(K) = -10 + 273.15 = 263.15 \text{ K} $$</div>
+            <div class="calculation">$$ T_2(K) = 25 + 273.15 = 298.15 \text{ K} $$</div>
+            <p><b>Presiones a atm:</b></p>
+            <div class="calculation">$$ P_1(\text{atm}) = 755 \text{ torr} \times \frac{1 \text{ atm}}{760 \text{ torr}} \approx 0.993 \text{ atm} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Despejar la incógnita y resolver</h3>
+            <p>Reordenamos la Ley Combinada para despejar el volumen final, \(V_2\).</p>
+            <div class="calculation">
+                $$ V_2 = \frac{P_1 V_1 T_2}{T_1 P_2} $$
+            </div>
+            <p>Sustituimos los valores convertidos:</p>
+            <div class="calculation">
+                $$ V_2 = \frac{(0.993 \text{ atm}) \times (8.2 \text{ L}) \times (298.15 \text{ K})}{(263.15 \text{ K}) \times (1.2 \text{ atm})} $$
+                $$ V_2 \approx \frac{2428.9}{315.78} \text{ L} \approx 7.69 \text{ L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: El nuevo volumen del gas será <strong>7.69 L</strong>.</p>
+        </div>
+        
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="ecuacion1.html" class="nav-link" style="float: right;">Siguiente Sección →</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 5</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Un recipiente de 10,0 L contiene 14,0 g de nitrógeno y 16,0 g de oxígeno a 20 °C. Calcule la fracción molar y la presión parcial de cada gas, y la presión total de la mezcla.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema es un ejercicio completo sobre la composición y presión de una mezcla de gases. Nos enseña a describir completamente un sistema gaseoso a partir de las masas de sus componentes.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li>Calcular los <b>moles</b> de N₂ y los moles de O₂ a partir de sus masas.</li>
+                <li>Calcular los <b>moles totales</b> sumando los moles de cada gas.</li>
+                <li>Calcular la <b>fracción molar</b> de cada gas (\(X_A = n_A / n_{total}\)).</li>
+                <li>Calcular la <b>presión total</b> usando la Ley del Gas Ideal con los moles totales.</li>
+                <li>Calcular la <b>presión parcial</b> de cada gas usando \(P_A = X_A \cdot P_{Total}\).</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Calcular Moles y Fracciones Molares</h3>
+            <p>Masa molar N₂ ≈ 28.02 g/mol. Masa molar O₂ ≈ 32.00 g/mol.</p>
+            <div class="calculation">$$ n_{N_2} = \frac{14.0 \text{ g}}{28.02 \text{ g/mol}} \approx 0.500 \text{ mol} $$</div>
+            <div class="calculation">$$ n_{O_2} = \frac{16.0 \text{ g}}{32.00 \text{ g/mol}} = 0.500 \text{ mol} $$</div>
+            <p>Moles totales: \(n_{total} = 0.500 + 0.500 = 1.00 \text{ mol}\).</p>
+            <p>Fracciones molares:</p>
+            <div class="calculation">$$ X_{N_2} = \frac{0.500}{1.00} = 0.500 \quad | \quad X_{O_2} = \frac{0.500}{1.00} = 0.500 $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la Presión Total</h3>
+            <p>T = 20 °C = 293.15 K. V = 10.0 L.</p>
+            <div class="calculation">
+                $$ P_{Total} = \frac{n_{total}RT}{V} = \frac{(1.00 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (293.15 \text{ K})}{10.0 \text{ L}} \approx 2.41 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular las Presiones Parciales</h3>
+            <p>Como las fracciones molares son iguales (0.5), cada gas contribuirá con la mitad de la presión total.</p>
+            <div class="calculation">$$ P_{N_2} = X_{N_2} \cdot P_{Total} = 0.500 \times 2.41 \text{ atm} \approx 1.205 \text{ atm} $$</div>
+            <div class="calculation">$$ P_{O_2} = X_{O_2} \cdot P_{Total} = 0.500 \times 2.41 \text{ atm} \approx 1.205 \text{ atm} $$</div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta:</p>
+            <ul>
+                <li>Fracción Molar N₂: <strong>0.500</strong> | Fracción Molar O₂: <strong>0.500</strong></li>
+                <li>Presión Parcial N₂: <strong>1.205 atm</strong> | Presión Parcial O₂: <strong>1.205 atm</strong></li>
+                <li>Presión Total: <strong>2.41 atm</strong></li>
+            </ul>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p6.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Ecuación Gas Ideal 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Ecuación del Gas Ideal - Problema 1</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> El argón es un gas inerte que se utiliza en los focos para retardar la vaporización del filamento. Un foco que contiene argón a 1,20 atm y 18 °C se calienta a 85 °C a volumen constante. ¿Cuál es la presión final del gas?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos ayuda a entender por qué la presión dentro de un recipiente sellado y rígido (como una lata de aerosol o un foco) aumenta peligrosamente si se calienta. Es una demostración directa de la relación entre temperatura y presión.</p>
+            <p><b>Por qué:</b> La frase clave es <b>"a volumen constante"</b>, ya que un foco es un recipiente rígido. Cuando el volumen y la cantidad de gas (n) son constantes, la relación entre presión y temperatura se describe por la <b>Ley de Gay-Lussac</b>. Esta ley es un caso especial de la Ley Combinada de los Gases.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Identificar la ley y convertir temperaturas a Kelvin</h3>
+            <p>La ley a utilizar es la Ley de Gay-Lussac: \(\frac{P_1}{T_1} = \frac{P_2}{T_2}\).</p>
+            <p>Organizamos los datos y, como siempre, convertimos las temperaturas a la escala absoluta (Kelvin).</p>
+            <ul>
+                <li><b>Estado Inicial (1):</b></li>
+                <ul>
+                    <li>\(P_1 = 1.20 \text{ atm}\)</li>
+                    <li>\(T_1 = 18 \text{ °C} \rightarrow 18 + 273.15 = 291.15 \text{ K}\)</li>
+                </ul>
+                <li><b>Estado Final (2):</b></li>
+                <ul>
+                    <li>\(P_2 = ?\) (Nuestra incógnita)</li>
+                    <li>\(T_2 = 85 \text{ °C} \rightarrow 85 + 273.15 = 358.15 \text{ K}\)</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Despejar la incógnita y resolver</h3>
+            <p>De la fórmula de Gay-Lussac, despejamos la presión final, \(P_2\).</p>
+            <div class="calculation">
+                $$ P_2 = P_1 \times \frac{T_2}{T_1} $$
+            </div>
+            <p>Ahora, sustituimos los valores conocidos en la ecuación.</p>
+            <div class="calculation">
+                $$ P_2 = 1.20 \text{ atm} \times \frac{358.15 \text{ K}}{291.15 \text{ K}} $$
+                $$ P_2 \approx 1.48 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La presión final del gas en el foco es <strong>1.48 atm</strong>.</p>
+        </div>
+        
+        <div class="explanation">
+            <p><b>Conclusión:</b> Al aumentar la temperatura, las moléculas de argón ganan energía cinética, moviéndose más rápido y chocando con más fuerza y frecuencia contra las paredes internas del foco. Como el volumen no puede aumentar, este aumento en la fuerza de las colisiones se manifiesta como un aumento de la presión, de 1.20 atm a 1.48 atm.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="ecuacion_gas_ideal_2.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

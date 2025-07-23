@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Densidad y Peso Molecular 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Densidad y Peso Molecular - Problema 1</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Calcule la densidad del gas hexafluoruro de azufre (SF₆) a 707 torr y 21 °C.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a calcular una propiedad intrínseca de un gas (su densidad) bajo condiciones específicas de presión y temperatura, sin necesidad de conocer la masa o el volumen de la muestra.</p>
+            <p><b>Por qué:</b> La Ecuación del Gas Ideal se puede reordenar para obtener una fórmula directa para la densidad: \(d = \frac{PM}{RT}\). Esta es la herramienta perfecta cuando conocemos la identidad del gas (y por tanto su masa molar, M) y sus condiciones (P y T).</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Reunir los datos y convertirlos a unidades estándar</h3>
+            <p>Para usar la fórmula con R = 0.0821 L·atm/mol·K, necesitamos los datos en las unidades correctas.</p>
+            <ul>
+                <li><b>Gas:</b> Hexafluoruro de azufre (SF₆).</li>
+                <li><b>P (presión):</b> 707 torr → \(707 / 760 \approx 0.930 \text{ atm}\)</li>
+                <li><b>T (temperatura):</b> 21 °C → \(21 + 273.15 = 294.15 \text{ K}\)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la Masa Molar (M) de SF₆</h3>
+            <p>Necesitamos la masa molar del compuesto a partir de las masas atómicas (S ≈ 32.07 g/mol, F ≈ 19.00 g/mol).</p>
+            <div class="calculation">
+                $$ M_{SF_6} = (1 \times 32.07) + (6 \times 19.00) = 32.07 + 114.00 = 146.07 \text{ g/mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Aplicar la fórmula de la densidad y resolver</h3>
+            <p>Ahora sustituimos todos los valores en la ecuación de la densidad.</p>
+            <div class="calculation">
+                $$ d = \frac{PM}{RT} = \frac{(0.930 \text{ atm}) \times (146.07 \frac{\text{g}}{\text{mol}})}{(0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (294.15 \text{ K})} $$
+                $$ d = \frac{135.84}{24.15} \frac{\text{g}}{\text{L}} \approx 5.62 \text{ g/L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La densidad del SF₆ en esas condiciones es <strong>5.62 g/L</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="densidad2.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

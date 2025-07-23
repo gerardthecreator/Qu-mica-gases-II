@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 3</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Un matraz de 1,00 L a 25 °C contiene nitrógeno gaseoso a una presión de 0,525 atm. Se añade a este matraz una muestra de 0,500 L de oxígeno gaseoso a 25 °C y 0,750 atm. Calcule la presión total y la presión parcial de cada gas en la mezcla final.</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema simula el proceso de añadir un gas a un recipiente que ya contiene otro. Es un ejercicio clásico de mezcla de gases donde la temperatura se mantiene constante.</p>
+            <p><b>Por qué:</b> La forma más sencilla de resolverlo es aplicando la Ley de Boyle a cada gas individualmente. Cada gas se expande (o no) para ocupar el nuevo volumen total, y su presión parcial cambia en consecuencia. La presión total final es simplemente la suma de estas nuevas presiones parciales.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Determinar las condiciones finales y calcular las presiones parciales</h3>
+            <p>El matraz final tiene un volumen de 1.00 L. Esta será la \(V_{final}\) para ambos gases.</p>
+            
+            <p><b>Para el Nitrógeno (N₂):</b></p>
+            <p>El N₂ ya está en un matraz de 1.00 L, que es el volumen final. Por lo tanto, su presión parcial no cambia.</p>
+            <div class="calculation">$$ P_{N_2, final} = 0.525 \text{ atm} $$</div>
+
+            <p><b>Para el Oxígeno (O₂):</b></p>
+            <p>El O₂ se expande desde 0.500 L hasta 1.00 L. Usamos la Ley de Boyle: \(P_1V_1 = P_2V_2\).</p>
+            <div class="calculation">
+                $$ P_{O_2, final} = P_{O_2, inicial} \times \frac{V_{inicial}}{V_{final}} = (0.750 \text{ atm}) \times \frac{0.500 \text{ L}}{1.00 \text{ L}} = 0.375 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular la Presión Total Final</h3>
+            <p>Según la Ley de Dalton, la presión total es la suma de las presiones parciales finales.</p>
+            <div class="calculation">
+                $$ P_{Total, final} = P_{N_2, final} + P_{O_2, final} = 0.525 \text{ atm} + 0.375 \text{ atm} = 0.900 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta:</p>
+            <ul>
+                <li>Presión parcial de N₂: <strong>0.525 atm</strong></li>
+                <li>Presión parcial de O₂: <strong>0.375 atm</strong></li>
+                <li>Presión Total: <strong>0.900 atm</strong></li>
+            </ul>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p4.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>

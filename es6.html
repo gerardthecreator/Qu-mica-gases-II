@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Estequiometría y Gases 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Estequiometría y Gases - Problema 6</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> El óxido nitroso (N₂O), o gas de la risa, se puede generar por la descomposición térmica de nitrato de amonio (NH₄NO₃). El otro producto es agua. ¿Qué volumen total de gas, recogido a 120 °C y 0,95 atm, se produce por la descomposición de 0,46 g de NH₄NO₃?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema nos enseña a manejar reacciones donde se produce más de un producto gaseoso. Debemos calcular los moles de cada gas por separado y luego sumarlos para encontrar el volumen total.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li>Escribir y balancear la ecuación de descomposición.</li>
+                <li>Calcular los moles de nitrato de amonio (NH₄NO₃) a partir de su masa.</li>
+                <li>Usar la estequiometría para hallar los moles de N₂O y los moles de H₂O producidos.</li>
+                <li>Calcular los <b>moles totales de gas</b> (\(n_{total} = n_{N_2O} + n_{H_2O}\)).</li>
+                <li>Usar la Ley del Gas Ideal con los moles totales para encontrar el volumen total.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Escribir y balancear la ecuación</h3>
+            <p>La descomposición del nitrato de amonio produce óxido nitroso y agua.</p>
+            <div class="calculation">$$ \text{NH}_4\text{NO}_3\text{(s)} \xrightarrow{\Delta} \text{N}_2\text{O(g)} + 2\text{H}_2\text{O(g)} $$</div>
+            <p>Nota: A 120 °C, el agua está en estado gaseoso y contribuye al volumen total.</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular los moles de NH₄NO₃</h3>
+            <p>Masa molar de NH₄NO₃ = (2×14.01) + (4×1.008) + (3×16.00) = 80.05 g/mol.</p>
+            <div class="calculation">
+                $$ n_{NH_4NO_3} = \frac{0.46 \text{ g}}{80.05 \text{ g/mol}} \approx 0.00575 \text{ mol} $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular los moles de cada gas producido</h3>
+            <p><b>Moles de N₂O:</b> La relación es 1:1.</p>
+            <div class="calculation">$$ n_{N_2O} = 0.00575 \text{ mol} $$</div>
+            <p><b>Moles de H₂O:</b> La relación es 1:2.</p>
+            <div class="calculation">$$ n_{H_2O} = 0.00575 \text{ mol NH}_4\text{NO}_3 \times \frac{2 \text{ mol H}_2\text{O}}{1 \text{ mol NH}_4\text{NO}_3} = 0.0115 \text{ mol} $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 4: Calcular el volumen total de gas</h3>
+            <p>Primero, sumamos los moles totales de gas.</p>
+            <div class="calculation">$$ n_{total} = n_{N_2O} + n_{H_2O} = 0.00575 + 0.0115 = 0.01725 \text{ mol} $$</div>
+            <p>Convertimos la temperatura a Kelvin: T = 120 °C → 393.15 K.</p>
+            <p>Aplicamos la Ley del Gas Ideal:</p>
+            <div class="calculation">
+                $$ V_{total} = \frac{n_{total}RT}{P} = \frac{(0.01725 \text{ mol}) \times (0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (393.15 \text{ K})}{0.95 \text{ atm}} $$
+                $$ V_{total} = \frac{0.557}{0.95} \text{ L} \approx 0.586 \text{ L} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: El volumen total de gas producido es <strong>0.586 L</strong> (o 586 mL).</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p1.html" class="nav-link" style="float: right;">Siguiente Sección →</a>
+    </div>
+</body>
+</html>

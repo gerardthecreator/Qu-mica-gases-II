@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Avanzados de Gases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.8; }
+        .container { max-width: 900px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2, h3 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.8em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 2em; margin-top: 40px; border-bottom: 3px solid #16a085; padding-bottom: 10px; }
+        h3 { font-size: 1.5em; color: #16a085; margin-top: 25px; }
+        p, li { font-size: 1.1em; }
+        .formula-box { background-color: #e8f6f3; border-left: 5px solid #16a085; padding: 15px; margin: 20px 0; border-radius: 5px; font-size: 1.3em; text-align: center; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #bdc3c7; padding: 12px; text-align: left; }
+        th { background-color: #34495e; color: white; font-family: 'Anton', sans-serif; letter-spacing: 0.5px; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #c0392b; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conceptos, Fórmulas y Trucos para Gases</h1>
+        
+        <h2>1. Ecuación del Gas Ideal y Leyes Derivadas</h2>
+        <p>La base de todo es la Ecuación del Gas Ideal:</p>
+        <div class="formula-box">$$ PV = nRT $$</div>
+        <p>De ella se derivan las leyes simples cuando algo es constante:</p>
+        <ul>
+            <li><b>Ley de Boyle (T y n ctes):</b> \(P_1V_1 = P_2V_2\)</li>
+            <li><b>Ley de Charles (P y n ctes):</b> \(\frac{V_1}{T_1} = \frac{V_2}{T_2}\)</li>
+            <li><b>Ley de Gay-Lussac (V y n ctes):</b> \(\frac{P_1}{T_1} = \frac{P_2}{T_2}\)</li>
+            <li><b>Ley de Avogadro (P y T ctes):</b> \(\frac{V_1}{n_1} = \frac{V_2}{n_2}\)</li>
+        </ul>
+        <p>Para un cambio de condiciones donde solo n es constante, se usa la <b>Ley Combinada de los Gases</b>:</p>
+        <div class="formula-box">$$ \frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2} $$</div>
+
+        <h2>2. Densidad y Masa Molar de Gases</h2>
+        <p>Podemos relacionar la Ecuación del Gas Ideal con la densidad (\(d = m/V\)) y la masa molar (\(M = m/n\)).</p>
+        <div class="explanation">
+            Partiendo de \(PV=nRT\), sustituimos \(n = m/M\). <br>
+            \(PV = \frac{m}{M}RT \implies P M = \frac{m}{V} R T \). Como \(d = m/V\), obtenemos:
+        </div>
+        <div class="formula-box">$$ d = \frac{PM}{RT} $$</div>
+        <p>Esta fórmula es extremadamente útil. Reordenándola, podemos encontrar la masa molar de un gas desconocido:</p>
+        <div class="formula-box">$$ M = \frac{dRT}{P} $$</div>
+
+        <h2>3. Mezclas, Estequiometría y Presiones Parciales</h2>
+        <p>Estos conceptos no cambian. La <b>Ley de Dalton</b> (\(P_{Total} = \sum P_{parciales}\)) y el uso del <b>mol como puente</b> en la estequiometría siguen siendo fundamentales.</p>
+
+        <h2>4. Gases Reales: La Ecuación de Van der Waals</h2>
+        <p>La Ley del Gas Ideal funciona bien a bajas presiones y altas temperaturas. Cuando los gases están comprimidos o fríos, las fuerzas intermoleculares y el volumen de las propias moléculas se vuelven importantes. La ecuación de Van der Waals corrige esto.</p>
+        <div class="formula-box">$$ \left(P + \frac{an^2}{V^2}\right)(V-nb) = nRT $$</div>
+        <div class="explanation">
+            <ul>
+                <li>El término <b>\( \frac{an^2}{V^2} \)</b> corrige la <b>presión</b>. Las fuerzas de atracción entre moléculas (representadas por 'a') reducen la fuerza con la que chocan contra las paredes, disminuyendo la presión observada. Por eso sumamos este término a la presión medida.</li>
+                <li>El término <b>\( nb \)</b> corrige el <b>volumen</b>. Las moléculas de gas tienen un tamaño real (representado por 'b'). El volumen disponible para moverse es el volumen del recipiente menos el volumen que ocupan las propias moléculas.</li>
+            </ul>
+        </div>
+
+        <h2>Tabla de Reglas de Oro y "Trucos"</h2>
+        <table>
+            <thead>
+                <tr><th>Regla / Truco</th><th>Por qué es importante</th><th>Ejemplo de Aplicación</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><b>1. ¡Siempre a Kelvin!</b></td><td>Las leyes de los gases se basan en la escala de temperatura absoluta.</td><td>25 °C → 298.15 K.</td></tr>
+                <tr><td><b>2. Unidades Consistentes con R</b></td><td>Usa L, atm, mol, K para que R = 0.0821 funcione.</td><td>760 torr = 1 atm. 101325 Pa = 1 atm. 1000 mL = 1 L.</td></tr>
+                <tr><td><b>3. El Mol es el Rey</b></td><td>Es la única unidad que conecta masa, volumen (vía PV=nRT) y número de partículas. Es el puente en la estequiometría.</td><td>Gramos → Moles → Volumen.</td></tr>
+                <tr><td><b>4. Identifica lo Constante</b></td><td>Te dice qué ley usar. "Isotérmico" → T cte (Boyle). "Isobárico" → P cte (Charles). "Recipiente rígido" → V cte (Gay-Lussac).</td><td>"La presión se mantiene constante" → Usar Ley de Charles.</td></tr>
+                <tr><td><b>5. Cuidado con las Unidades Raras</b></td><td>Problemas con ft³ o kPa requieren conversiones cuidadosas o usar un valor de R diferente (¡no recomendado para empezar!).</td><td>1 ft³ ≈ 28.3 L. 1 atm ≈ 101.3 kPa.</td></tr>
+            </tbody>
+        </table>
+
+        <a href="index_gases_2_completo.html" class="nav-link">Volver al Menú Principal</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solución Presiones Parciales 6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; line-height: 1.7; }
+        .container { max-width: 800px; margin: 20px auto; padding: 25px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { font-family: 'Anton', sans-serif; color: #2c3e50; letter-spacing: 1px; }
+        h1 { font-size: 2.5em; text-align: center; text-transform: uppercase; }
+        h2 { font-size: 1.8em; margin-top: 30px; border-bottom: 3px solid #16a085; padding-bottom: 8px; }
+        .problem-statement { background-color: #ecf0f1; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 5px; font-style: italic; }
+        .step { margin-top: 25px; }
+        .step h3 { font-family: 'Oswald', sans-serif; font-weight: 700; color: #e67e22; font-size: 1.4em; }
+        .explanation { background-color: #fdf2e9; border-left: 5px solid #e67e22; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .calculation { background-color: #e8f6f3; padding: 15px; margin: 10px 0; border-radius: 5px; font-size: 1.2em; text-align: center; }
+        .final-answer { margin-top: 30px; padding: 20px; background-color: #16a085; color: white; text-align: center; border-radius: 8px; font-size: 1.5em; font-weight: 700; }
+        .nav-link { display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: 700; transition: background-color 0.2s; }
+        .nav-link:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solución: Presiones Parciales - Problema 6</h1>
+        
+        <div class="problem-statement">
+            <p><strong>Enunciado:</strong> Se descompone una muestra de 2,50 g de KClO₃ en un recipiente de 2,50 L a 25 °C. El O₂ generado se mezcla con N₂ que se encontraba en un recipiente de 1,50 L a 25 °C y 1,25 atm. ¿Cuál es la presión total de la mezcla?</p>
+        </div>
+
+        <h2>Análisis y Estrategia</h2>
+        <div class="explanation">
+            <p><b>Para qué:</b> Este problema combina estequiometría con mezcla de gases. Nos enseña a calcular la cantidad de un gas producido en una reacción y luego determinar cómo afecta a la presión de un sistema cuando se mezcla con otro gas.</p>
+            <p><b>Plan de Ataque:</b>
+            <ol>
+                <li><b>Reacción:</b> Calcular los moles de O₂ producidos por la descomposición del KClO₃.</li>
+                <li><b>Mezcla:</b> Calcular los moles de N₂ a partir de sus condiciones iniciales.</li>
+                <li><b>Final:</b> Sumar los moles de O₂ y N₂ para obtener los moles totales. El volumen final es la suma de los volúmenes de los recipientes.</li>
+                <li>Calcular la presión total final con la Ley del Gas Ideal.</li>
+            </ol>
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Calcular Moles de O₂ (Estequiometría)</h3>
+            <p>Reacción: \(2\text{KClO}_3\text{(s)} \rightarrow 2\text{KCl(s)} + 3\text{O}_2\text{(g)}\). Masa molar KClO₃ ≈ 122.55 g/mol.</p>
+            <div class="calculation">$$ n_{KClO_3} = \frac{2.50 \text{ g}}{122.55 \text{ g/mol}} \approx 0.0204 \text{ mol} $$</div>
+            <p>Relación molar 2:3</p>
+            <div class="calculation">$$ n_{O_2} = 0.0204 \text{ mol KClO}_3 \times \frac{3 \text{ mol O}_2}{2 \text{ mol KClO}_3} = 0.0306 \text{ mol O}_2 $$</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular Moles de N₂</h3>
+            <p>Usamos la Ley del Gas Ideal para el N₂ en su recipiente inicial. T = 25 °C = 298.15 K.</p>
+            <div class="calculation">
+                $$ n_{N_2} = \frac{PV}{RT} = \frac{(1.25 \text{ atm}) \times (1.50 \text{ L})}{(0.0821 \frac{\text{L} \cdot \text{atm}}{\text{mol} \cdot \text{K}}) \times (298.15 \text{ K})} \approx 0.0766 \text{ mol N}_2 $$
+            </div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Calcular la Presión Total Final</h3>
+            <p>Sumamos los moles y los volúmenes:</p>
+            <div class="calculation">$$ n_{total} = n_{O_2} + n_{N_2} = 0.0306 + 0.0766 = 0.1072 \text{ mol} $$</div>
+            <div class="calculation">$$ V_{total} = 2.50 \text{ L} + 1.50 \text{ L} = 4.00 \text{ L} $$</div>
+            <p>Aplicamos la Ley del Gas Ideal para la mezcla final:</p>
+            <div class="calculation">
+                $$ P_{Total} = \frac{n_{total}RT}{V_{total}} = \frac{(0.1072 \text{ mol}) \times (0.0821) \times (298.15 \text{ K})}{4.00 \text{ L}} \approx 0.657 \text{ atm} $$
+            </div>
+        </div>
+
+        <div class="final-answer">
+            <p>Respuesta: La presión total de la mezcla es <strong>0.657 atm</strong>.</p>
+        </div>
+
+        <a href="index_gases_2_completo.html" class="nav-link">← Volver al Menú Principal</a>
+        <a href="p7.html" class="nav-link" style="float: right;">Siguiente Problema →</a>
+    </div>
+</body>
+</html>
